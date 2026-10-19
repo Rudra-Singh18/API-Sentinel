@@ -71,3 +71,61 @@
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
 .incident-ack { flex: none; min-height: 28px; padding: 5px 8px; font-size: 9px; }
 @media (max-width: 600px) { .incident-row { flex-wrap: wrap; padding: 10px 0; } .incident-time { margin-left: auto; } .incident-ack { margin-left: 39px; } }
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+	.button:not(:disabled),
+	.icon-button,
+	.more-button,
+	.top-avatar,
+	.theme-toggle,
+	.side-link,
+	.metric,
+	.panel,
+	.settings-panel,
+	.detail-summary article,
+	.preview-service,
+	.workflow-grid article,
+	.public-service-list article {
+		transition: transform .16s ease, box-shadow .16s ease, background-color .16s ease;
+	}
+
+	.button:not(:disabled):hover,
+	.icon-button:hover,
+	.more-button:hover,
+	.top-avatar:hover,
+	.theme-toggle:hover {
+		transform: translateY(-1px) scale(1.03);
+		box-shadow: 0 4px 12px #162b3a24;
+	}
+
+	.side-link:hover {
+		transform: translateY(-1px);
+		box-shadow: 0 4px 12px #07131c30;
+	}
+
+	.metric:hover,
+	.panel:hover,
+	.settings-panel:hover,
+	.detail-summary article:hover,
+	.preview-service:hover,
+	.workflow-grid article:hover,
+	.public-service-list article:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 10px 26px #182d3d20;
+	}
+
+	:root[data-theme='dark'] .button:not(:disabled):hover,
+	:root[data-theme='dark'] .icon-button:hover,
+	:root[data-theme='dark'] .more-button:hover,
+	:root[data-theme='dark'] .top-avatar:hover,
+	:root[data-theme='dark'] .theme-toggle:hover,
+	:root[data-theme='dark'] .metric:hover,
+	:root[data-theme='dark'] .panel:hover,
+	:root[data-theme='dark'] .settings-panel:hover,
+	:root[data-theme='dark'] .detail-summary article:hover,
+	:root[data-theme='dark'] .preview-service:hover,
+	:root[data-theme='dark'] .workflow-grid article:hover,
+	:root[data-theme='dark'] .public-service-list article:hover {
+		box-shadow: 0 10px 26px #0005;
+	}
+}

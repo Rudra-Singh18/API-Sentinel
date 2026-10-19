@@ -29,6 +29,7 @@ const apiMock = vi.hoisted(() => ({
   updateNotifications: vi.fn(),
   sendTestEmail: vi.fn(),
 }))
+const themeStorage = vi.hoisted(() => new Map<string, string>())
 
 vi.mock('./lib/api', () => ({ api: apiMock, DEMO_MODE: false }))
 
@@ -50,7 +51,12 @@ function renderAt(path: string) {
 describe('API Sentinel console', () => {
   beforeEach(() => {
     vi.clearAllMocks()
-    localStorage.removeItem('api-sentinel-theme')
+    themeStorage.clear()
+    vi.stubGlobal('localStorage', {
+      getItem: (key: string) => themeStorage.get(key) ?? null,
+      setItem: (key: string, value: string) => themeStorage.set(key, value),
+      removeItem: (key: string) => themeStorage.delete(key),
+    })
     document.documentElement.dataset.theme = 'light'
     apiMock.me.mockResolvedValue(sampleUser)
     apiMock.listMonitors.mockResolvedValue([sampleMonitor])
