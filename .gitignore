@@ -1,0 +1,11 @@
+.env
+.env.*.local
+!.env.example
+**/node_modules/
+**/dist/
+**/target/
+**/.DS_Store
+.idea/
+.vscode/
+coverage/
+*.log

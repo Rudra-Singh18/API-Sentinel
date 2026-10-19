@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:sentinel;MODE=PostgreSQL;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+  mail:
+    host: localhost
+sentinel:
+  worker-concurrency: 2
+  max-monitors-per-user: 10
+  cors-origin: http://localhost:5173
+management:
+  health:
+    mail:
+      enabled: false

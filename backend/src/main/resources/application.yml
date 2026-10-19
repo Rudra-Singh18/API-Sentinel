@@ -1,0 +1,50 @@
+server:
+  port: ${PORT:8080}
+  servlet:
+    session:
+      cookie:
+        http-only: true
+        same-site: lax
+        secure: ${SESSION_COOKIE_SECURE:false}
+spring:
+  application:
+    name: api-sentinel
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://127.0.0.1:5433/sentinel}
+    username: ${DATABASE_USERNAME:sentinel}
+    password: ${DATABASE_PASSWORD:}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+  jackson:
+    time-zone: UTC
+  mail:
+    host: ${SMTP_HOST:}
+    port: ${SMTP_PORT:1025}
+    username: ${SMTP_USERNAME:}
+    password: ${SMTP_PASSWORD:}
+    properties:
+      mail.smtp.auth: ${SMTP_AUTH:false}
+      mail.smtp.starttls.enable: ${SMTP_STARTTLS:false}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      probes:
+        enabled: true
+springdoc:
+  swagger-ui:
+    path: /docs
+sentinel:
+  allow-http: ${ALLOW_HTTP:false}
+  max-monitors-per-user: ${MAX_MONITORS_PER_USER:10}
+  worker-concurrency: ${WORKER_CONCURRENCY:8}
+  public-url: ${PUBLIC_URL:http://localhost:5173}
+  cors-origin: ${CORS_ORIGIN:http://localhost:5173,http://127.0.0.1:5173}
+  mail-from: ${MAIL_FROM:noreply@apisentinel.local}

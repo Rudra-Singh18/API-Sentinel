@@ -1,0 +1,273 @@
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --ink: #e7edf2;
+  --muted: #a5b1bc;
+  --line: #354652;
+  --paper: #1b2832;
+  --canvas: #111b23;
+  --blue: #68a9e8;
+  color: var(--ink);
+  background: var(--canvas);
+}
+
+:root[data-theme='dark'] body,
+:root[data-theme='dark'] .console-shell,
+:root[data-theme='dark'] .console-main,
+:root[data-theme='dark'] .landing,
+:root[data-theme='dark'] .auth-page,
+:root[data-theme='dark'] .public-status {
+  color: var(--ink);
+  background: var(--canvas);
+}
+
+:root[data-theme='dark'] .topbar,
+:root[data-theme='dark'] .public-status header,
+:root[data-theme='dark'] .auth-panel,
+:root[data-theme='dark'] .panel,
+:root[data-theme='dark'] .metric,
+:root[data-theme='dark'] .settings-panel,
+:root[data-theme='dark'] .settings-state,
+:root[data-theme='dark'] .detail-summary article,
+:root[data-theme='dark'] .detail-panel,
+:root[data-theme='dark'] .data-panel,
+:root[data-theme='dark'] .modal,
+:root[data-theme='dark'] .status-form,
+:root[data-theme='dark'] .monitor-picker,
+:root[data-theme='dark'] .hero-preview,
+:root[data-theme='dark'] .preview-metrics > div,
+:root[data-theme='dark'] .overall-status,
+:root[data-theme='dark'] .public-service-list article {
+  color: var(--ink);
+  border-color: var(--line);
+  background: var(--paper);
+}
+
+:root[data-theme='dark'] .landing-nav,
+:root[data-theme='dark'] .landing-proof,
+:root[data-theme='dark'] .workflow,
+:root[data-theme='dark'] .landing-footer,
+:root[data-theme='dark'] .preview-bar,
+:root[data-theme='dark'] .preview-service,
+:root[data-theme='dark'] .settings-panel-heading,
+:root[data-theme='dark'] .account-meta,
+:root[data-theme='dark'] .detail-config > div,
+:root[data-theme='dark'] .table-scroll td,
+:root[data-theme='dark'] .table-scroll th,
+:root[data-theme='dark'] .incident-row {
+  border-color: var(--line);
+}
+
+:root[data-theme='dark'] .auth-field input,
+:root[data-theme='dark'] .field input,
+:root[data-theme='dark'] .field select,
+:root[data-theme='dark'] .settings-form .field input,
+:root[data-theme='dark'] .settings-form .field select,
+:root[data-theme='dark'] .search-box,
+:root[data-theme='dark'] .toolbar select,
+:root[data-theme='dark'] .range-line > span {
+  color: var(--ink);
+  border-color: var(--line);
+  background: #14212a;
+}
+
+:root[data-theme='dark'] input::placeholder,
+:root[data-theme='dark'] .page-heading p,
+:root[data-theme='dark'] .panel-heading p,
+:root[data-theme='dark'] .range-line,
+:root[data-theme='dark'] .range-line small,
+:root[data-theme='dark'] .detail-endpoint,
+:root[data-theme='dark'] .detail-empty,
+:root[data-theme='dark'] .settings-panel-heading p,
+:root[data-theme='dark'] .settings-form .field small,
+:root[data-theme='dark'] .workflow p,
+:root[data-theme='dark'] .landing-proof span,
+:root[data-theme='dark'] .landing-footer > span,
+:root[data-theme='dark'] .auth-panel > p,
+:root[data-theme='dark'] .auth-footnote,
+:root[data-theme='dark'] .public-status p {
+  color: var(--muted);
+}
+
+:root[data-theme='dark'] .page-heading h1,
+:root[data-theme='dark'] .panel-heading h2,
+:root[data-theme='dark'] .metric-value,
+:root[data-theme='dark'] .metric-head,
+:root[data-theme='dark'] .metric-detail,
+:root[data-theme='dark'] .detail-summary b,
+:root[data-theme='dark'] .detail-config dd,
+:root[data-theme='dark'] .monitor-name b,
+:root[data-theme='dark'] .table-scroll td,
+:root[data-theme='dark'] .table-scroll th,
+:root[data-theme='dark'] .incident-copy b,
+:root[data-theme='dark'] .incident-time b,
+:root[data-theme='dark'] .settings-panel-heading h2,
+:root[data-theme='dark'] .settings-toggle b,
+:root[data-theme='dark'] .account-meta b,
+:root[data-theme='dark'] .workflow h2,
+:root[data-theme='dark'] .workflow h3,
+:root[data-theme='dark'] .landing-footer .brand,
+:root[data-theme='dark'] .hero-copy h1,
+:root[data-theme='dark'] .preview-title strong,
+:root[data-theme='dark'] .preview-metrics b,
+:root[data-theme='dark'] .preview-service b,
+:root[data-theme='dark'] .auth-panel h1,
+:root[data-theme='dark'] .public-status h1 {
+  color: var(--ink);
+}
+
+:root[data-theme='dark'] .landing-nav,
+:root[data-theme='dark'] .landing-nav > div,
+:root[data-theme='dark'] .landing-hero,
+:root[data-theme='dark'] .landing-proof,
+:root[data-theme='dark'] .workflow,
+:root[data-theme='dark'] .landing-footer {
+  color: var(--ink);
+}
+
+:root[data-theme='dark'] .landing-nav > div > a,
+:root[data-theme='dark'] .auth-back,
+:root[data-theme='dark'] .auth-switch,
+:root[data-theme='dark'] .auth-text-button {
+  color: #aab8c4;
+}
+
+:root[data-theme='dark'] .preview-service,
+:root[data-theme='dark'] .no-incidents,
+:root[data-theme='dark'] .empty-table,
+:root[data-theme='dark'] .placeholder,
+:root[data-theme='dark'] .status-page-empty {
+  color: var(--muted);
+}
+
+:root[data-theme='dark'] .preview-bar,
+:root[data-theme='dark'] .preview-chart-label,
+:root[data-theme='dark'] .preview-service,
+:root[data-theme='dark'] .status-page-row,
+:root[data-theme='dark'] .incident-row {
+  background: transparent;
+}
+
+:root[data-theme='dark'] .range-chip,
+:root[data-theme='dark'] .status-chip:not(.up):not(.down):not(.degraded),
+:root[data-theme='dark'] .quiet-button,
+:root[data-theme='dark'] .toolbar select,
+:root[data-theme='dark'] .action-menu {
+  color: var(--ink);
+  border-color: var(--line);
+  background: #202f3b;
+}
+
+:root[data-theme='dark'] .action-menu button,
+:root[data-theme='dark'] .action-menu button:hover {
+  color: var(--ink);
+  background: #202f3b;
+}
+
+:root[data-theme='dark'] .demo-banner,
+:root[data-theme='dark'] .demo-auth {
+  color: #edcf8c;
+  border-color: #625533;
+  background: #302b1f;
+}
+
+:root[data-theme='dark'] .demo-banner a,
+:root[data-theme='dark'] .demo-auth span {
+  color: #d4c49b;
+}
+
+:root[data-theme='dark'] .mail-config,
+:root[data-theme='dark'] .mail-config.configured {
+  color: #d7c58f;
+  border-color: #5e5438;
+  background: #2b281f;
+}
+
+:root[data-theme='dark'] .sidebar {
+  background: #101820;
+}
+
+:root[data-theme='dark'] .breadcrumbs {
+  color: #a5b1bc;
+}
+
+:root[data-theme='dark'] .breadcrumbs b {
+  color: #e7edf2;
+}
+
+:root[data-theme='dark'] .metric-head .blue {
+  color: #9bc9f1;
+  background: #213b50;
+}
+
+:root[data-theme='dark'] .metric-head .green {
+  color: #8fd0ad;
+  background: #1b3b30;
+}
+
+:root[data-theme='dark'] .metric-head .slate {
+  color: #b8c8d5;
+  background: #293944;
+}
+
+:root[data-theme='dark'] .metric-head .amber {
+  color: #e2c27e;
+  background: #45381f;
+}
+
+:root[data-theme='dark'] .metric-head .red {
+  color: #e7a4a4;
+  background: #472b2e;
+}
+
+:root[data-theme='dark'] .top-avatar {
+  color: #dbe8f3;
+  border-color: #405363;
+  background: #253746;
+}
+
+:root[data-theme='dark'] .icon-button:hover,
+:root[data-theme='dark'] .more-button:hover {
+  color: #f2f6f8;
+  background: #283945;
+}
+
+.theme-toggle {
+  display: inline-grid;
+  flex: none;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  color: var(--ink);
+  background: var(--paper);
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background: var(--canvas);
+}
+
+.public-status-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (max-width: 600px) {
+  .landing-nav > div {
+    gap: 10px;
+  }
+
+  .theme-toggle {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.auth-top-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}

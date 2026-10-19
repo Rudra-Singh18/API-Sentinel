@@ -1,0 +1,27 @@
+.monitor-detail-link { color: #2b6faa; }
+.monitor-detail-link:hover { color: #174e80; text-decoration: underline; }
+.detail-back { margin: -7px 0 14px; }
+.detail-endpoint { overflow-wrap: anywhere; margin: 8px 0; color: #74818d; font-family: var(--mono); font-size: 10px; }
+.monitor-detail-heading { align-items: flex-start; }
+.detail-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.danger-button { border-color: #f0dada; color: #a24848; }
+.danger-button:hover { background: #fcf3f3; }
+.detail-summary { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.detail-summary article { display: grid; gap: 9px; min-width: 0; padding: 13px; border: 1px solid var(--line); border-radius: 5px; background: white; }
+.detail-summary span { color: #7e8a96; font-size: 9px; }
+.detail-summary b { overflow-wrap: anywhere; color: #2d3c4b; font-family: var(--mono); font-size: 12px; font-weight: 550; }
+.detail-columns { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; margin-top: 13px; }
+.detail-panel { min-width: 0; padding: 15px; }
+.detail-config { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 17px 0 0; }
+.detail-config div { display: grid; gap: 6px; min-width: 0; }
+.detail-config dt { color: #87929d; font-size: 9px; }
+.detail-config dd { overflow-wrap: anywhere; margin: 0; color: #3e4d5a; font-size: 10px; font-weight: 600; }
+.detail-empty { padding: 14px 0 2px; color: #89949f; font-size: 10px; line-height: 1.6; }
+.detail-columns .incident-list { margin-top: 12px; }
+.detail-columns .incident-row { min-height: 55px; }
+.detail-columns .incident-time { min-width: 65px; }
+.detail-summary + .detail-columns { margin-top: 13px; }
+.data-panel .table-scroll { margin-top: 14px; }
+.data-panel td { max-width: 270px; overflow-wrap: anywhere; }
+@media (max-width: 850px) { .detail-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); } .detail-columns { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .monitor-detail-heading { display: grid; } .detail-actions { width: 100%; } .detail-actions .button { flex: 1; } .detail-summary article { padding: 10px; } }
